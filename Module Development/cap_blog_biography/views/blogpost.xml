@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+	<xpath expr='//*[@id="blog_content"]' position="after">
+		<div style="margin:0;background-color:#393939;color:#ececec">
+			<div style="margin-left:37%;margin-right:37%;padding-top:30px;padding-bottom:30px">
+				<span>
+					<div id="blog_author_avatar" t-field="blog_post.author_avatar"/>
+				</span>
+				<h4 style="color:white">
+					By
+					<div id="blog_author" t-field="blog_post.author_id.name"/>
+					, On
+					<div id="blog_publish_date" t-field="blog_post.is_published"/>
+				</h4>
+			</div>
+        </div>
+	</xpath>
+</odoo>
