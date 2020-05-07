@@ -10,9 +10,10 @@
 					</span>
 					<h4 style="color:white">
 						By
-						<div id="blog_author" t-field="blog_post.author_id.name"/>
-						, On
-						<div id="blog_publish_date" t-field="blog_post.is_published"/>
+						<span id="blog_author" t-field="blog_post.author_id.name"/>
+						<div>On
+						<span id="blog_publish_date" t-field="blog_post.published_date"/>
+						</div>
 					</h4>
 				</div>
 			</div>
