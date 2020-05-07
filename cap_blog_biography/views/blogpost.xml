@@ -7,6 +7,7 @@
 				<div style="margin-left:37%;margin-right:37%;padding-top:30px;padding-bottom:30px">
 					<span>
 						<div t-field="blog_post.author_id.image" class="o_not_editable" t-options='{"widget": "image"}'/>
+						<div>
 							<h4 style="color:white">
 								By
 								<span id="blog_author" t-field="blog_post.author_id.name"/>
@@ -14,7 +15,8 @@
 									<span id="blog_publish_date" t-field="blog_post.published_date"/>
 									</div>
 							</h4>
-					</div>
+						</div>
+					</span>
 					<div><span id="blog_author_biography" t-field="blog_post.author_id.biography"/></div>
 				</div>
 			</div>
