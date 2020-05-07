@@ -6,7 +6,7 @@
 			<div style="margin:0;background-color:#393939;color:#ececec">
 				<div style="margin-left:37%;margin-right:37%;padding-top:30px;padding-bottom:30px">
 					<span>
-							<span t-field="blog_post.author_id.image" class="o_not_editable" t-options="{&quot;widget&quot;: &quot;image&quot;, &quot;class&quot;: &quot;rounded-circle&quot;, &quot;style&quot;:&quot;width: 30px; margin-right: 10px; display:inline&quot;}"/>
+							<span t-field="blog_post.author_id.image" class="o_not_editable" t-options='{"widget": "image", "class", "style":"width: 60px; margin-right: 10px; display:inline"}'/>
 					</span>
 					<h4 style="color:white">
 						By
