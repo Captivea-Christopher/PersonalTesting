@@ -18,10 +18,10 @@
 										<span id="blog_publish_date" t-field="blog_post.published_date" t-options='{"widget":"date"}'/>
 										</div>
 								</h4>
+								<div><span id="blog_author_biography" t-field="blog_post.author_id.biography"/></div>
 							</div>
 						</div>	
 					</div>
-					<div><span id="blog_author_biography" t-field="blog_post.author_id.biography"/></div>
 				</div>
 			</div>
 		</xpath>
