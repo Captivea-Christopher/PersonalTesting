@@ -5,7 +5,7 @@
 		<xpath expr='//*[@id="blog_content"]' position="after">
 			<div style="margin:0;background-color:#393939;color:#ececec">
 				<div style="margin-left:37%;margin-right:37%;padding-top:30px;padding-bottom:30px">
-					<span>
+					<span style="text-align: center">
 						<span t-field="blog_post.author_id.image" class="o_not_editable" t-options='{"widget": "image"}'/>
 							<h4 style="color:white">
 								By
