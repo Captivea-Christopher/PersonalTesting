@@ -11,7 +11,7 @@
 								By
 								<span id="blog_author" t-field="blog_post.author_id.name"/>
 									<div>On
-									<span id="blog_publish_date" t-field="blog_post.published_date" t-options='{widget":"date"}'/>
+									<span id="blog_publish_date" t-field="blog_post.published_date" t-options='{"widget":"date"}'/>
 									</div>
 							</h4>
 					</span>
