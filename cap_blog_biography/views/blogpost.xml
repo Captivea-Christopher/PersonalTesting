@@ -7,10 +7,10 @@
 				<div style="margin-left:20%;margin-right:20%;padding-top:30px;padding-bottom:30px">
 					<div class="container">
 						<div class="row">
-							<div class="col-3" align="center">
+							<div class="col-sm-3" align="center">
 								<span t-field="blog_post.author_id.image" class="o_not_editable" t-options='{"widget": "image", "class":"rounded-circle", "style":"width : 100px, margin-right: 10px"}'/>
 							</div>
-							<div class="col-9" align="center">
+							<div class="col-sm-9" align="center">
 								<h4 style="color:white">
 									By
 									<span id="blog_author" t-field="blog_post.author_id.name"/>
