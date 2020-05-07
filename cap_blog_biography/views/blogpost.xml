@@ -8,7 +8,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-3" align="center">
-								<span t-field="blog_post.author_id.image" class="o_not_editable" t-options='{"widget": "image", "class":"rounded-circle", "style":"width : 100px, margin-right: 10px, "}'/>
+								<span t-field="blog_post.author_id.image" class="o_not_editable" t-options='{"widget": "image", "class":"rounded-circle", "style":"width : 100px, margin-right: 10px"}'/>
 							</div>
 							<div class="col-9" align="center">
 								<h4 style="color:white">
