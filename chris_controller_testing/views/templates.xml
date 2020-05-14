@@ -1,6 +1,6 @@
 <odoo>
     <data>
-         <template id="test_webpage"> 
+         <template id="no"> 
             <form action="/my/account" method="post">
                 <div class="row o_portal_details">
                     <div class="col-lg-8">
@@ -24,6 +24,11 @@
                     </div>
                 </div>
             </form>
-         </template> 
+         </template>
+         
+        <template id="test_webpage"> 
+            <div>hi</div>
+         </template>
+        
     </data>
 </odoo>
