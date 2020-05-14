@@ -14,7 +14,7 @@
                                         <input type="text" name="name" t-att-value="customer_name"/>
                                     </div>
                                     <input type="hidden" name="redirect" t-att-value="redirect"/>
-                                </div>\
+                                </div>
                                 <div class="clearfix">
                                     <button type="submit" class="btn btn-primary float-right mb32 ">
                                         Confirm
