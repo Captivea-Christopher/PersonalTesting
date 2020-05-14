@@ -2,7 +2,7 @@
     <data>
          <template id="test_webpage"> 
             <t t-call="website.layout">
-                <div class="container">
+                <t t-call="portal.portal_layout">
                     <form action="/my/account" method="post">
                         <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
                         <div class="row o_portal_details">
@@ -24,7 +24,7 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                </t>
             </t>
          </template>
     </data>
