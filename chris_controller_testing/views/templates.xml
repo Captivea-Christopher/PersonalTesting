@@ -2,7 +2,7 @@
     <data>
          <template id="test_webpage"> 
             <t t-call="website.layout">
-                <div class="container"></div>
+                <div class="container">
                     <form action="/my/account" method="post">
                         <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
                         <div class="row o_portal_details">
