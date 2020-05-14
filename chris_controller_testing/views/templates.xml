@@ -1,18 +1,14 @@
 <odoo>
     <data>
-         <template id="no"> 
+         <template id="test_webpage"> 
             <form action="/my/account" method="post">
                 <div class="row o_portal_details">
                     <div class="col-lg-8">
                         <div class="row">
-                            <div class="col-lg-12">
-                              <div t-if="error_message" class="alert alert-danger" role="alert">
-                                  <t t-foreach="error_message" t-as="err"><t t-esc="err"/><br/></t>
-                              </div>
-                            </div>
+                            <div class="col-lg-12"/>
                             <div t-attf-class="form-group #{error.get('name') and 'o_has_error' or ''} col-xl-6">
                                 <label class="col-form-label" for="name">Your Name</label>
-                                <input type="text" name="name" t-attf-class="form-control #{error.get('name') and 'is-invalid' or ''}" t-att-value="name or partner.name"/>
+                                <input type="text" name="name" t-attf-class="form-control #{error.get('name') and 'is-invalid' or ''}" t-att-value="name"/>
                             </div>
                         </div>
                         <div class="clearfix">
@@ -26,9 +22,5 @@
             </form>
          </template>
          
-        <template id="test_webpage"> 
-            <div>hi</div>
-         </template>
-        
     </data>
 </odoo>
