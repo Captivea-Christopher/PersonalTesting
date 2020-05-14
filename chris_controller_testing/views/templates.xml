@@ -2,7 +2,6 @@
     <data>
          <template id="test_webpage"> 
             <t t-call="website.layout">
-                <div class="container">
                     <form action="/website_form/" method="post" class="s_website_form container-fluid mt32" enctype="multipart/form-data" data-model_name="project.task" data-success_page="">
                         <div class="container">
                           <div class="row form-group form-field">
@@ -63,7 +62,6 @@
                           </div>
                         </div>
                       </form>
-                </div>
             </t>
          </template>
     </data>
