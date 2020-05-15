@@ -1,7 +1,0 @@
-<odoo>
-    <data>
-         <template id="test_webpage"> 
-            <div>hi</div>
-         </template> 
-    </data>
-</odoo>
