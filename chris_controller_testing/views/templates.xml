@@ -24,6 +24,15 @@
                                       </option>
                             </select>
                           </div>
+                          <div>
+                            <select class="form-control o_website_form_input" name="test_stuff" required="false">
+                                <t t-foreach="test_list" t-as="i">
+                                    <option value="$as_index">
+                                        <t t-esc="i"
+                                        </option>
+                                </t>
+                            </select>
+                          </div>
                         </div>
                         <div class="row form-group form-field o_website_form_required">
                           <div class="col-md-4 text-md-right col-lg-2">
@@ -32,8 +41,7 @@
                                               </label>
                           </div>
                           <div class="col-md-8 col-lg-8">
-                            <input type="text" class="form-control o_website_form_input" name="name" required="1" value="anythinghere"/> <!--t-attf-value="current_user"-->
-                          </div>
+                            <input type="text" class="form-control o_website_form_input" name="name" required="1" t-attf-value="current_user"/>
                         </div>
                         <div class="row form-group form-field o_website_form_field_hidden">
                           <div class="col-md-4 text-md-right col-lg-2 pb0">
@@ -63,12 +71,7 @@
                         </div>
                       </div>
                     </form>
-                    <t t-set="foo" t-value="42"/>
-                    <div><t t-esc="foo"/></div>
                     <div><t t-esc="big_context"/></div>
-                    <div><t t-esc="long_user"/></div>
-                    <div><t t-esc="test_esc"/></div>
-                    <div>asd;jlsdflj;sadfljasfdjlasfdlkj;</div>
                 </div>
             </t>
          </template>
