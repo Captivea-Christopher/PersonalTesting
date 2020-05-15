@@ -5,8 +5,7 @@
                 <div class="container">
                     <form action="/website_form/" method="post" class="s_website_form container-fluid mt32" enctype="multipart/form-data" data-model_name="project.task" data-success_page="Https://www.Captivea.us/my/account">
                       <div class="container">
-                         
-                        <p><t t-esc="list_of_projects_owned_by_customer"/></p>
+                        
                         
                         <div class="row form-group form-field">
                           <div class="col-md-4 text-md-right col-lg-2">
