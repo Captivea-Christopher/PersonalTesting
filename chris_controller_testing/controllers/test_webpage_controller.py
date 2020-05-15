@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 from odoo import http
-
+from odoo.http import request
 
 class test_webpage(http.Controller):
+	
 	@http.route('/test/webpage', type='http', auth='user', website=True)
 	def index(self, **kw):
 		current_user = http.request.session.uid
