@@ -9,7 +9,7 @@
                         <div>
                             <t t-foreach="[7,8,9]" t-as="i">
                                 <t t-set="foo" t-value="2 + 1"/>
-                                <t t-esc="foo"/>
+                                <t t-esc="$as_index"/>
                             </t>
                         </div>
                         
