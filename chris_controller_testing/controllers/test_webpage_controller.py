@@ -3,10 +3,9 @@ from odoo import http, models, fields
 from odoo.http import request
 
 class test_webpage(http.Controller):
-	
 	@http.route('/test/webpage', type='http', auth='user', website=True)
 	def index(self, **kw):
 		current_user = http.request.session.uid
 		big_context = http.request.context
-		long_user = fields.Many2one('res.users', string='My User',default=lambda self: self.env.user)
+		#long_user = fields.Many2one('res.users', string='My User',default=lambda self: self.env.user)
 		return http.request.render('chris_controller_testing.test_webpage', {'current_user' : current_user, 'big_context' : big_context, 'long_user' = long_user})
