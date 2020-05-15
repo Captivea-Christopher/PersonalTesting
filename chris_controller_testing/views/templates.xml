@@ -8,7 +8,8 @@
                         
                         <div>
                             <t t-foreach="[7,8,9]" t-as="i">
-                                <p><t t-esc="{{$as_index + 2}}"/></p>
+                                <t t-set="foo" t-value="$as_index + 2"/>
+                                <p><t t-esc="foo"/></p>
                             </t>
                         </div>
                         
