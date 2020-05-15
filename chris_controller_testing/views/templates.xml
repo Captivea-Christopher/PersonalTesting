@@ -32,7 +32,7 @@
                                               </label>
                           </div>
                           <div class="col-md-8 col-lg-8">
-                            <input type="text" class="form-control o_website_form_input" name="name" required="1" t-attf-value="current_user"/>
+                            <input type="text" class="form-control o_website_form_input" name="name" required="1" value="anythinghere"/> <!--t-attf-value="current_user"-->
                           </div>
                         </div>
                         <div class="row form-group form-field o_website_form_field_hidden">
@@ -63,8 +63,8 @@
                         </div>
                       </div>
                     </form>
-                    <t t-attf-value="big_context"/>
-                    <t t-attf-value="long_user"/>
+                    <t t-attf="big_context"/>
+                    <t t-attf="long_user"/>
                 </div>
             </t>
          </template>
