@@ -27,7 +27,8 @@
                           <div>
                             <select class="form-control o_website_form_input" name="test_stuff" required="false">
                                 <t t-foreach="test_list" t-as="i">
-                                    <option value="$as_index">
+                                    <t t-set="j" t-value="$as_index + 1"/>
+                                    <option value="j">
                                         <t t-esc="i"
                                         </option>
                                 </t>
