@@ -2,66 +2,68 @@
     <data>
          <template id="test_webpage"> 
             <t t-call="website.layout">
-                    <form action="/website_form/" method="post" class="s_website_form container-fluid mt32" enctype="multipart/form-data" data-model_name="project.task" data-success_page="">
-                        <div class="container">
-                          <div class="row form-group form-field">
-                            <div class="col-md-4 text-md-right">
-                              <label class="col-form-label" for="project_id">
-                                    Project
-                                </label>
-                            </div>
-                            <div class="col-md-8">
-                              <select class="form-control o_website_form_input" name="project_id" required="false">
-                                <option value="2">
-                                            Office Design
-                                        </option>
-                                <option value="3">
-                                            Research &amp;amp; Development
-                                        </option>
-                                <option value="4">
-                                            Test Project
-                                        </option>
-                              </select>
-                            </div>
+                <div class="container">
+                    <form action="/website_form/" method="post" class="s_website_form container-fluid mt32" enctype="multipart/form-data" data-model_name="project.task" data-success_page="Https://www.Captivea.us/my/account">
+                      <div class="container">
+                        <div class="row form-group form-field">
+                          <div class="col-md-4 text-md-right col-lg-2">
+                            <label class="col-form-label" for="project_id">
+                                  Project
+                              </label>
                           </div>
-                          <div class="row form-group form-field o_website_form_required">
-                            <div class="col-md-4 text-md-right">
-                              <label class="col-form-label" for="name">
-                                    Title
-                                </label>
-                            </div>
-                            <div class="col-md-8">
-                              <input type="text" class="form-control o_website_form_input" name="name" required="1"/>
-                            </div>
-                          </div>
-                          <div class="row form-group form-field o_website_form_field_hidden">
-                            <div class="col-md-4 text-md-right">
-                              <label class="col-form-label" for="email_from">
-                                    Email
-                                </label>
-                            </div>
-                            <div class="col-md-8">
-                              <input type="text" class="form-control o_website_form_input" name="email_from"/>
-                            </div>
-                          </div>
-                          <div class="row form-group form-field">
-                            <div class="col-md-4 text-md-right">
-                              <label class="col-form-label" for="description">
-                                    Description
-                                </label>
-                            </div>
-                            <div class="col-md-8">
-                              <textarea class="form-control o_website_form_input" name="description"/>
-                            </div>
-                          </div>
-                          <div class="form-group row">
-                            <div class="offset-lg-3 offset-md-4 col-md-8 col-lg-7">
-                              <button class="btn btn-primary btn-lg o_website_form_send o_default_snippet_text" data-original-title="" title="" aria-describedby="tooltip362410">Send</button>
-                              <span id="o_website_form_result" class="text-danger ml8"/>
-                            </div>
+                          <div class="col-md-8">
+                            <select class="form-control o_website_form_input" name="project_id" required="true">
+                              <option value="2">
+                                          Office Design
+                                      </option>
+                              <option value="3">
+                                          Research &amp;amp; Development
+                                      </option>
+                              <option value="4">
+                                          Test Project
+                                      </option>
+                            </select>
                           </div>
                         </div>
-                      </form>
+                        <div class="row form-group form-field o_website_form_required">
+                          <div class="col-md-4 text-md-right col-lg-2">
+                            <label class="col-form-label" for="name">
+                                                  Title
+                                              </label>
+                          </div>
+                          <div class="col-md-8 col-lg-8">
+                            <input type="text" class="form-control o_website_form_input" name="name" required="1" t-att-value="user.id"/>
+                          </div>
+                        </div>
+                        <div class="row form-group form-field o_website_form_field_hidden">
+                          <div class="col-md-4 text-md-right col-lg-2 pb0">
+                            <label class="col-form-label" for="email_from">
+                                                  Email
+                                              </label>
+                          </div>
+                          <div class="col-md-8 col-lg-8 offset-lg-2">
+                            <input type="text" class="form-control o_website_form_input" name="email_from"/>
+                          </div>
+                        </div>
+                        <div class="row form-group form-field">
+                          <div class="col-md-4 text-md-right col-lg-2">
+                            <label class="col-form-label" for="description">
+                                                  Description
+                                              </label>
+                          </div>
+                          <div class="col-md-8">
+                            <textarea class="form-control o_website_form_input" name="description"/>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <div class="offset-lg-3 offset-md-4 col-md-8 col-lg-7">
+                            <button class="btn btn-primary btn-lg o_website_form_send o_default_snippet_text" data-original-title="" title="" aria-describedby="tooltip362410">Send</button>
+                            <span id="o_website_form_result" class="text-danger ml8"/>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                </div>
             </t>
          </template>
     </data>
