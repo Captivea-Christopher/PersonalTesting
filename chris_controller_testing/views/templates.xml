@@ -13,27 +13,13 @@
                           </div>
                           <div class="col-md-8">
                             <select class="form-control o_website_form_input" name="project_id" required="true">
-                              <option value="2">
-                                          Office Design
-                                      </option>
-                              <option value="3">
-                                          Research &amp;amp; Development
-                                      </option>
-                              <option value="4">
-                                          Test Project
-                                      </option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="row form-group form-field o_website_form_required">
-                            <select class="form-control o_website_form_input" name="test_stuff" required="false">
-                                <t t-foreach="test_list" t-as="i">
-                                    <!--<t t-set="j" t-value="$as_index + 1"/>-->
+                                <t t-foreach="list_of_projects_owned_by_customer" t-as="customer_project">
                                     <option value="$as_index">
-                                        <t t-esc="i"/>
+                                        <t t-esc="customer_project"/>
                                         </option>
                                 </t>
                             </select>
+                          </div>
                         </div>
                         <div class="row form-group form-field o_website_form_required">
                           <div class="col-md-4 text-md-right col-lg-2">
