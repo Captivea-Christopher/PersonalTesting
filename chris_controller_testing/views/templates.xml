@@ -29,7 +29,7 @@
                                 <t t-foreach="test_list" t-as="i">
                                     <t t-set="j" t-value="$as_index + 1"/>
                                     <option value="j">
-                                        <t t-esc="i"
+                                        <t t-esc="i"/>
                                         </option>
                                 </t>
                             </select>
