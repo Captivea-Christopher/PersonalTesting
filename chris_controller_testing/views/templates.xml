@@ -16,8 +16,7 @@
                           <div class="col-md-8">
                             <select class="form-control o_website_form_input" name="project_id" required="true">
                                 <t t-foreach="list_of_projects_owned_by_customer" t-as="customer_project">
-                                    <t t-value="i" t-set="{{$customer_project_index + 2}}"/>
-                                    <option value="i">
+                                    <option t-attf-value="{{$customer_project_index + 2}}">
                                         <t t-esc="customer_project"/>
                                         </option>
                                 </t>
