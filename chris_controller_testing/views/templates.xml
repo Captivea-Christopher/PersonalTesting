@@ -35,7 +35,6 @@
                                 </t>
                             </select>
                           </div>
-                        </div>
                         <div class="row form-group form-field o_website_form_required">
                           <div class="col-md-4 text-md-right col-lg-2">
                             <label class="col-form-label" for="name">
