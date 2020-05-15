@@ -7,6 +7,9 @@
                       <div class="container">
                         
                         
+                        <p><t t-esc="test"/></p>
+                        
+                        
                         <div class="row form-group form-field">
                           <div class="col-md-4 text-md-right col-lg-2">
                             <label class="col-form-label" for="project_id">
