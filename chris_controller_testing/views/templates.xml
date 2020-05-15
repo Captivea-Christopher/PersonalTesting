@@ -34,7 +34,7 @@
                                         </option>
                                 </t>
                             </select>
-                          </div>
+                        </div>
                         <div class="row form-group form-field o_website_form_required">
                           <div class="col-md-4 text-md-right col-lg-2">
                             <label class="col-form-label" for="name">
@@ -44,6 +44,7 @@
                           <div class="col-md-8 col-lg-8">
                             <input type="text" class="form-control o_website_form_input" name="name" required="1" t-attf-value="current_user"/>
                           </div>
+                        </div>
                         <div class="row form-group form-field o_website_form_field_hidden">
                           <div class="col-md-4 text-md-right col-lg-2 pb0">
                             <label class="col-form-label" for="email_from">
@@ -72,7 +73,6 @@
                         </div>
                       </div>
                     </form>
-                   <div><t t-esc="big_context"/></div>
                 </div>
             </t>
          </template>

@@ -3,15 +3,14 @@
     'name': "chris_controller_testing",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Testing Platform for Website""",
 
     'description': """
-        Long description of module's purpose
+        Where i will mess around with website features and development
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'author': "Christopher_Beirne",
+    'website': "https://captivea-christopher-personaltesting-task-submission-1094177.dev.odoo.com/web?debug=true#id=544&action=32&model=ir.module.module&view_type=form&menu_id=5",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/master/odoo/addons/base/module/module_data.xml
@@ -20,7 +19,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base','website'],
 
     # always loaded
     'data': [
