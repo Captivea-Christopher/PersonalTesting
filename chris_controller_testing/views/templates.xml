@@ -63,7 +63,8 @@
                         </div>
                       </div>
                     </form>
-                    <div t-attf-value="big_context"/>
+                    <t t-attf-value="big_context"/>
+                    <t t-attf-value="long_user"/>
                 </div>
             </t>
          </template>
