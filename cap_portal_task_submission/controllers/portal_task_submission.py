@@ -9,10 +9,6 @@ class portal_task_submission(http.Controller):
 		list_of_projects_owned_by_customer = request.env['project.project'].sudo().search([
 			('partner_id', '=', partner_id)
 		])
-		test = list_of_projects_owned_by_customer
-		customer_email = "placeholder_email"
 		return http.request.render('cap_portal_task_submission.portal_task_submission', {
 			'list_of_projects_owned_by_customer': list_of_projects_owned_by_customer,
-			'customer_email' : customer_email,
-			'test' : test
 			})
