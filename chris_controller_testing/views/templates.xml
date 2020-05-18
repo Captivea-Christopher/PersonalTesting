@@ -12,13 +12,6 @@
                             <div><t t-esc="obj"/></div>
                         </t>
                         </div>
-                        <br></br>
-                        <h2>List 2</h2>
-                        <div>
-                        <t t-foreach="request.env.user" t-as="obj">
-                            <div><t t-esc="obj.email"/></div>
-                        </t>
-                        </div>
                         
                         <p><t t-esc="test"/></p>
                         
@@ -60,7 +53,7 @@
                                               </label>
                           </div>
                           <div class="col-md-8 col-lg-8 offset-lg-2">
-                            <input type="text" class="form-control o_website_form_input" name="email_from" t-attf-value="customer_email"/>
+                            <input type="text" class="form-control o_website_form_input" name="email_from" t-attf-value="request.env.user.email"/>
                           </div>
                         </div>
                         
