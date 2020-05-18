@@ -1,6 +1,6 @@
 <odoo>
     <data>
-         <template id="test_webpage"> 
+         <template id="test_webpage" name="Test Webpage"> 
             <t t-call="website.layout">
                 <div class="container">
                     <form action="/website_form/" method="post" class="s_website_form container-fluid mt32" enctype="multipart/form-data" data-model_name="project.task" data-success_page="Https://www.Captivea.us/my/account">
@@ -31,7 +31,7 @@
                                               </label>
                           </div>
                           <div class="col-md-8 col-lg-8">
-                            <input type="text" class="form-control o_website_form_input" name="name" required="1" t-attf-value="current_user"/>
+                            <input type="text" class="form-control o_website_form_input" name="name" required="1"/>
                           </div>
                         </div>
                         
@@ -73,5 +73,12 @@
                 </div>
             </t>
          </template>
+         
+         <template id="test_webpage_portal_task_button_extention" inherit-id="portal.portal_my_home" name="Portal Tast Button Extention">
+            <xpath expr='//*[@id="oe_structure_portal_my_home_2"]' position="after">
+                hi
+            </xpath>
+         </template>
+         
     </data>
 </odoo>
