@@ -9,7 +9,7 @@ class test_webpage(http.Controller):
 		# list_of_projects_owned_by_customer = request.env['project.project'].sudo().search([
 		# 	('partner_id', '=', user_uid)
 		# ])
-		list_of_projects_owned_by_customer = request.env['project.project']
+		list_of_projects_owned_by_customer = request.env['project.project'].sudo().search([])
 		test = list_of_projects_owned_by_customer
 		customer_email = "placeholder_email"
 		return http.request.render('chris_controller_testing.test_webpage', {
