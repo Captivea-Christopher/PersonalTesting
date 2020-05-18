@@ -11,7 +11,7 @@ class portal_task_submission(http.Controller):
 		])
 		test = list_of_projects_owned_by_customer
 		customer_email = "placeholder_email"
-		return http.request.render('chris_controller_testing.test_webpage', {
+		return http.request.render('cap_portal_task_submission.portal_task_submission', {
 			'list_of_projects_owned_by_customer': list_of_projects_owned_by_customer,
 			'customer_email' : customer_email,
 			'test' : test
