@@ -6,9 +6,17 @@
                     <form action="/website_form/" method="post" class="s_website_form container-fluid mt32" enctype="multipart/form-data" data-model_name="project.task" data-success_page="Https://www.Captivea.us/my/account">
                       <div class="container">
                         
+                        <h2>List 1</h2>
                         <div>
-                        <t t-foreach="request.env" t-as="obj">
-                            <t t-esc="obj"/>
+                        <t t-foreach="request.env[" t-as="obj">
+                            <div><t t-esc="obj"/></div>
+                        </t>
+                        </div>
+                        <br></br>
+                        <h2>List 2</h2>
+                        <div>
+                        <t t-foreach="request.self.env" t-as="obj">
+                            <div><t t-esc="obj"/></div>
                         </t>
                         </div>
                         
