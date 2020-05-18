@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from odoo import http, models, fields
+from odoo import http
 from odoo.http import request
 
 class portal_task_submission(http.Controller):
