@@ -75,9 +75,9 @@
          </template>
          
          <template id="test_webpage_portal_task_button_extention" inherit-id="portal.portal_my_home" name="Portal Tast Button Extention">
-            <xpath expr='//*[@id="oe_structure_portal_my_home_2"]' position="after">
-                hi
-            </xpath>
+            <!--<xpath expr='//*[@id="oe_structure_portal_my_home_2"]' position="after">-->
+            <!--    hi-->
+            <!--</xpath>-->
          </template>
          
     </data>
