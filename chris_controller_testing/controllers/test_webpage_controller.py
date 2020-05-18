@@ -6,7 +6,7 @@ class test_webpage(http.Controller):
 	@http.route('/test/webpage', type='http', auth='user', website=True)
 	def index(self, **kw):
 		user_uid = request.uid
-		list_of_projects_owned_by_customer = self.env['project.project'].sudo().search([
+		list_of_projects_owned_by_customer = request.env['project.project'].sudo().search([
 			('partner_id', '=', user_uid)
 		])
 		test = list_of_projects_owned_by_customer
