@@ -8,7 +8,7 @@
                         
                         <h2>List 1</h2>
                         <div>
-                        <t t-foreach="request.env[project.project]" t-as="obj">
+                        <t t-foreach="request.env" t-as="obj">
                             <div><t t-esc="obj"/></div>
                         </t>
                         </div>
