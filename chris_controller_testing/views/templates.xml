@@ -15,8 +15,8 @@
                         <br></br>
                         <h2>List 2</h2>
                         <div>
-                        <t t-foreach="request.env.uid" t-as="obj">
-                            <div><t t-esc="obj"/></div>
+                        <t t-foreach="request.env.user" t-as="obj">
+                            <div><t t-esc="obj.name"/></div>
                         </t>
                         </div>
                         
