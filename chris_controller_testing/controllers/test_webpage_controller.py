@@ -5,9 +5,9 @@ from odoo.http import request
 class test_webpage(http.Controller):
 	@http.route('/test/webpage', type='http', auth='user', website=True)
 	def index(self, **kw):
-		pid = request.env.user.partner_id
+		partner_id = request.env.user.partner_id.id
 		list_of_projects_owned_by_customer = request.env['project.project'].sudo().search([
-			('partner_id', '=', pid)
+			('partner_id', '=', partner_id)
 		])
 		test = list_of_projects_owned_by_customer
 		customer_email = "placeholder_email"
