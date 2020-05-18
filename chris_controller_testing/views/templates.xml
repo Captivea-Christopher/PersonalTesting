@@ -13,7 +13,7 @@
                         </t>
                         </div>
                         
-                        <p><t t-esc="test"/></p>
+                        <p><t t-esc="test.name"/></p>
                         
                         
                         <div class="row form-group form-field">
