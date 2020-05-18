@@ -6,6 +6,9 @@
                     <form action="/website_form/" method="post" class="s_website_form container-fluid mt32" enctype="multipart/form-data" data-model_name="project.task" data-success_page="Https://www.Captivea.us/my/account">
                       <div class="container">
                         
+                        <t t-foreach="request.env" t-as="obj">
+                            <t t-esc="obj"/>
+                        </t>
                         
                         <p><t t-esc="test"/></p>
                         
